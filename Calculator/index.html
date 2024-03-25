@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div id="calculator-body">
+        <div id="display-screen">
+            <input type="text" placeholder="0" id="input-screen" readonly>
+        </div>
+
+        <div class="display-buttons">
+        <button onclick="currentDisplay = '';
+        document.querySelector('#input-screen').value = currentDisplay;">C</button>
+
+        <button onclick="currentDisplay = currentDisplay + '*';
+        document.querySelector('#input-screen').value = currentDisplay;">*</button>
+
+        <button onclick="currentDisplay = currentDisplay + '-';
+        document.querySelector('#input-screen').value = currentDisplay;">--</button>
+
+        <button onclick=" currentDisplay.value = currentDisplay.value.toString().slice(0,-1);">⌫</button>
+
+        <button onclick=" currentDisplay = currentDisplay + '1';
+        document.querySelector('#input-screen').value = currentDisplay;">1</button>
+
+        <button onclick=" currentDisplay = currentDisplay + '2';
+        document.querySelector('#input-screen').value = currentDisplay;">2</button>
+
+        <button onclick=" currentDisplay = currentDisplay + '3';
+        document.querySelector('#input-screen').value = currentDisplay;">3</button>
+
+        <button onclick="currentDisplay = currentDisplay + '+';
+        document.querySelector('#input-screen').value = currentDisplay;">+</button>
+
+        
+        <button onclick=" currentDisplay = currentDisplay + '4';
+        document.querySelector('#input-screen').value = currentDisplay;">4</button>
+
+        <button onclick=" currentDisplay = currentDisplay + '5';
+        document.querySelector('#input-screen').value = currentDisplay;">5</button>
+
+        <button onclick=" currentDisplay = currentDisplay + '6';
+        document.querySelector('#input-screen').value = currentDisplay;">6</button>
+
+        <button onclick="currentDisplay = currentDisplay + '/';
+        document.querySelector('#input-screen').value = currentDisplay;">/</button>
+
+        <button onclick=" currentDisplay = currentDisplay + '7';
+        document.querySelector('#input-screen').value = currentDisplay;">7</button>
+
+        <button onclick=" currentDisplay = currentDisplay + '8';
+        document.querySelector('#input-screen').value = currentDisplay;">8</button>
+
+        <button onclick=" currentDisplay = currentDisplay + '0';
+        document.querySelector('#input-screen').value = currentDisplay;">9</button>
+        
+        <button onclick="let result = eval(currentDisplay); currentDisplay = result;
+        document.querySelector('#input-screen').value = currentDisplay;">=</button>
+
+
+        <button onclick=" currentDisplay = currentDisplay + '0';
+        document.querySelector('#input-screen').value = currentDisplay;">0</button>
+        
+        
+
+        </div>
+    </div>
+    
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
